@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The 2021 Frontend Developer Crash Course</title>
+        <link rel="stylesheet" href="./public/css/main.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="#">Remember<span>That</span></a>
+                <img
+                    id="mobile-cta"
+                    class="mobile-menu"
+                    src="./public/images/menu.svg"
+                    alt="menu icon"
+                />
+                <nav>
+                    <img
+                        id="mobile-exit"
+                        class="mobile-menu"
+                        src="./public/images/exit.svg"
+                        alt="close"
+                    />
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="#">Contact</a></li>
+                        <li class="go-premium-cta">
+                            <a href="#">Go Premium</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">It&apos;s Nitty &amp; Gritty</p>
+                    <h1>A Task App That Doesn&apos;t Stink.</h1>
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Try For Free</a>
+                        <a href="#" class="watch-video-cta">
+                            <img
+                                src="./public/images/watch.svg"
+                                alt="Watch a video"
+                            />
+                            Watch a video
+                        </a>
+                    </div>
+                </div>
+                <!-- /.left-col-->
+                <img
+                    src="./public/images/illustration.svg"
+                    class="hero-img"
+                    alt="illustration"
+                />
+            </div>
+        </section>
+        <!-- /.hero-->
+
+        <section class="features-section">
+            <div class="container">
+                <ul class="features-list">
+                    <li>Unlimited Tasks</li>
+                    <li>SMS Task Reminders</li>
+                    <li>Confetti Explosions upon Task Completions</li>
+                    <li>Social Media Announcements</li>
+                    <li>Real Time Collaboration</li>
+                    <li>Other Awesome Features</li>
+                </ul>
+                <img
+                    src="./public/images/holding-phone.jpg"
+                    alt="Man Holding Phone"
+                />
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.features-section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="./public/images/person.jpg" alt="Person" />
+                        <blockquote>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Numquam, id minus itaque culpa facere eum eius
+                            dolores odit doloremque minima beatae ipsam dicta
+                            dignissimos ipsum. Harum et veritatis voluptas
+                            maiores.
+                        </blockquote>
+                        <cite>- Jane Doe</cite>
+                    </li>
+
+                    <li>
+                        <img src="./public/images/person.jpg" alt="Person" />
+                        <blockquote>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Deserunt officiis nemo beatae nisi cupiditate
+                            laborum tempore numquam nulla minima ducimus
+                            aliquid, accusantium explicabo, iure optio dolorum,
+                            quos quaerat quam rem.
+                        </blockquote>
+                        <cite>- Jane Doe</cite>
+                    </li>
+
+                    <li>
+                        <img src="./public/images/person.jpg" alt="Person" />
+                        <blockquote>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Enim praesentium minima libero ut tempore
+                            voluptatibus! Possimus facilis nam a in quibusdam?
+                            Animi repellat, aliquam voluptates nemo temporibus
+                            quia esse assumenda.
+                        </blockquote>
+                        <cite>- Jane Doe</cite>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact</h2>
+
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        
+                        <input type="submit" class="send-message-cta" value="Send Message">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.3769804515787!2d32.597264315662166!3d-25.955674060220453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69a4ca7f3a15d%3A0x6ec688920a5db046!2sISUTC%20Faculdade!5e0!3m2!1spt-PT!2smz!4v1612645187538!5m2!1spt-PT!2smz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+                </div>
+            </div>
+        </section>
+        <script>
+            const mobileButton = document.getElementById('mobile-cta'),
+                  nav = document.querySelector('nav'),
+                  mobileButtonExit = document.getElementById('mobile-exit');
+
+            mobileButton.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+
+            mobileButtonExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+
+        </script>
+    </body>
+</html>
+<!--
+    Jerónimo Matavel | https://github.com/Jeronimo-MZ
+-->
